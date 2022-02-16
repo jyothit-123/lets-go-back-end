@@ -5,6 +5,7 @@ npm install
 npm i express
 npm i body-parser
 npm i mongoose
+npm i cors
 
 <!-- command to start server -->
 node app 
