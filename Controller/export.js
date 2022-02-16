@@ -9,7 +9,7 @@ exports.findAllUsers=async(req,res)=>{
                 data:allUserData
             })
         }else{
-            res.status(400).json({
+            res.status(401).json({
                 status:"Failure",
                 message:"User data not found"
             })
@@ -48,7 +48,7 @@ exports.login=async(req,res)=>{
                 data:loginData
             })
         }else{
-            res.status(400).json({
+            res.status(401).json({
                 status:"Failure",
                 message:"Invalid login data"
             })
